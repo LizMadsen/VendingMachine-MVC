@@ -5,10 +5,9 @@ import { Snacks } from "./Models/Snacks.js"
 class AppState extends EventEmitter {
   /** @type {import('./Models/Value').Value[]} */
   values = []
-
-  snacks = new snacks('Slappy', 83, 'https://i.ytimg.com/vi/vQ7F1Zj7KJE/maxresdefault.jpg')
+  activeSnack = new Snacks('Potion', 200, 'https://i.ytimg.com/vi/vQ7F1Zj7KJE/maxresdefault.jpg')
   /** @type {Snacks[]} */
-  snacks = new Snacks[]
+  snacks = []
   gameOver = false
 }
 
