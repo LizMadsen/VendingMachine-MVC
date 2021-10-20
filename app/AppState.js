@@ -5,10 +5,9 @@ import { Snacks } from "./Models/Snacks.js"
 class AppState extends EventEmitter {
   /** @type {import('./Models/Value').Value[]} */
   values = []
-  activeSnack = new Snacks('Potion', 200, 'https://i.ytimg.com/vi/vQ7F1Zj7KJE/maxresdefault.jpg')
+  activeSnack = new Snacks('Potion', 200, 'https://i.ebayimg.com/images/g/jRoAAOSwGzhaTarb/s-l400.jpg')
   /** @type {Snacks[]} */
   snacks = []
-  gameOver = false
 }
 
 export const ProxyState = new Proxy(new AppState(), {
