@@ -1,5 +1,6 @@
 import { EventEmitter } from "./Utils/EventEmitter.js"
 import { isValidProp } from "./Utils/isValidProp.js"
+import { Snacks } from "./Models/Snacks.js"
 
 class AppState extends EventEmitter {
   /** @type {import('./Models/Value').Value[]} */
@@ -7,7 +8,7 @@ class AppState extends EventEmitter {
 
   snacks = new snacks('Slappy', 83, 'https://i.ytimg.com/vi/vQ7F1Zj7KJE/maxresdefault.jpg')
   /** @type {Snacks[]} */
-  enemies = []
+  snacks = new Snacks[]
   gameOver = false
 }
 
